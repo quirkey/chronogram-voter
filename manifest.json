@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Chronogram Auto-Voter",
+  "version": "1.0",
+  "description": "Automatically votes for your favorite in Chronogram Readers' Choice Awards",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://embed-1143831.secondstreetapp.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
