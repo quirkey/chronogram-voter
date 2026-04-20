@@ -93,6 +93,10 @@ async function autoVote(email, targetName) {
     });
   }
 
+  // Scroll to bottom so all categories lazy-load, then wait for them to render
+  window.scrollTo(0, document.body.scrollHeight);
+  await sleep(3000);
+
   const target = targetName.toLowerCase();
   const voted = [];
   const alreadyVoted = [];
